@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Zone - Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="img/logo.png"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Lançamentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Mais Vendidos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">PC Gamer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Periféricos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Hardware</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Promoções</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Minha Conta</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Digite o que você procura...🎮"
+                            aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <section id="section-login">
+            <h1 style="
+            color: #ffff;
+            text-align: center;">Login</h1>
+            <div class="d-flex justify-content-center">
+                <form method="post" action="" id="login" class="row">
+
+                    <div class="col">
+
+                        <p>
+                            <label for="usuario" style="
+                        color: #ffff;">Nome: </label>
+                            <input id="usuario" name="usuario" required="required" type="text"
+                                placeholder="Insira o seu usuário" class="form-control" />
+                        </p>
+                        <p>
+                            <label for="senha" style="
+                        color: #ffff" ;>Senha: </label>
+                            <input id="senha" name="senha" required="required" type="password"
+                                placeholder="Insira a sua senha" class="form-control" />
+                        </p>
+
+                        <p class="d-grid">
+                            <a href="#" class="btn btn-primary" id="bt-login" onclick="login()"><i
+                                    class="fa-solid fa-right-to-bracket"></i> Login</a>
+                            <a href="#" class="lembrete text-end">Esqueceu a Senha?</a>
+                        </p>
+
+                        <div id="botao-cadastrar">
+                            <button type="button" class="btn btn-info">Não é cadastrado ainda? Cadastre-se</button>
+                        </div>
+                        </form>
+            </div>
+        </section>
+
+        <section id="section-cadastro">
+            <div id="form-cadastrar">
+
+
+                <h1 style="
+                color: #ffff; margin-top: 50px;
+                text-align: center;" ><i class="fa-solid fa-file-user"></i>Criar minha conta</h1>
+                <p style="
+                color: #ffff;
+                text-align: center;">Informe os seus dados abaixo para criar sua conta.</p>
+
+
+                <div class="d-flex justify-content-center">
+                    <form method="post" action="" id="login" class="row text-start">
+                        <p>
+                            <label for="usuario" style="
+                            color: #ffff">Usuário: </label>
+                            <input id="usuario" name="usuario" required="required" type="text"
+                                placeholder="ex. nome de usuário" class="form-control" />
+                        </p>
+                        <p>
+                            <label for="email" style="
+                            color: #ffff">E-mail: </label>
+                            <input id="email" name="email" required="required" type="email"
+                                placeholder="seu@email.com.br" class="form-control" />
+                        </p>
+                        <p>
+                            <label for="senha" style="
+                            color: #ffff">Senha: </label>
+                            <input id="senha" name="senha" required="required" type="password"
+                                placeholder="mínimo de 6 caracteres" class="form-control" />
+                        </p>
+                        <p class="d-grid">
+                            <a href="#"  class="btn btn-primary" id="bt-cadastrar"
+                                onclick="cadastro()" ><i class="fa-solid fa-circle-plus"></i> Cadastrar</a>
+                        </p>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <footer>
+        <footer>
+            <p></p>
+        </footer>
+
+        <!-- Whatsapp-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <a href="https://wa.me/55(81#)?text=Quero montar meu PC GAMER!" style="position:fixed;width:60px;height:60px;bottom:20px;right:20px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+          z-index:1000;" target="_blank">
+            <i style="margin-top:16px" class="fa fa-whatsapp"></i>
+        </a>
+
+        <script src="js/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+            crossorigin="anonymous"></script>
+
+</body>
+
+
+
+<!-- Footer -->
+<footer class="bg-dark text-left text-white">
+    <!-- Grid container -->
+    <div class="container-p-4">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+            <!-- Facebook -->
+            <a class="botao" href="www.facebook.com.br" role="button"><i class="fab-fa-facebook-f"><img
+                        src="/img/facebook.png""></i
+              ></a>
+        
+              <!-- Whatasapp -->
+              <a class=" botao" href="wa.me/5581#" role="button"><i class="fab-fa-wpp"><img
+                            src="/img/whatsapp.png"></i></a>
+
+            <!-- Google -->
+            <a class="botao" href="#!" role="button"><i class="fab-fa-google"><img src="/img/google-maps.png"></i></a>
+
+            <!-- Instagram -->
+            <a class="botao" href="#!" role="button"><i class="fab-fa-insta"><img src="/img/instagram.png"></i></a>
+
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Form -->
+        <section class="">
+            <form action="">
+                <!--Grid row-->
+                <div class="row d-flex justify-content-center">
+                    <!--Grid column-->
+                    <div class="col-auto">
+                        <p class="pt-2">
+                            <strong>Receba ofertas exclusivas no seu e-mail</strong>
+                        </p>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-5 col-12">
+                        <!-- Email input -->
+                        <div class="form-inline form-white mb-4">
+                            <input type="email" id="form5Example21" class="form-control" />
+                            <label class="form-outline-label" type="text" placeholder="Digite seu E-mail"></label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-auto">
+                        <!-- Submit button -->
+                        <button type="submit" class="btn btn-outline-light mb-4">
+                            Inscreva-se!
+                        </button>
+                    </div>
+                    <!--Grid column-->
+                </div>
+                <!--Grid row-->
+            </form>
+        </section>
+        <!-- Section: Form -->
+
+        <!-- Section: Text -->
+        <section class="mb-4">
+            <p>
+                A Empresa Gaming Zone, nasceu da experiência de mais de 10 anos de trabalho com muito aprendizado, entre
+                acertos e erros hoje podemos afirmar que tudo, principalmente os erros, foram necessários para o
+                nascimento de uma empresa madura com muito a oferecer aos nossos clientes. Conhecendo bem as
+                necessidades do mercado, podemos oferecer um atendimento especializado tanto na área técnica quanto
+                comercial.
+            </p>
+        </section>
+        <!-- Section: Text -->
+
+        <!-- Section: Links -->
+        <section class="links">
+            <!--Grid row-->
+            <div class="row">
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Institucional</h5>
+
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#!" class="text-white">Quem Somos</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Localização</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Privacidade</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Valores</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Dúvidas</h5>
+
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#!" class="text-white">Entrega</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Garantia</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Como comprar</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Formas de Pagamento</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Ajuda</h5>
+
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#!" class="text-white">SAC</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Fale conosco</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Política de privacidade</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Trocas e devoluções</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Formas de Pagamento</h5>
+
+                    <ul class="list-unstyled-img">
+                        <li>
+                            <img src="/img/american.png">
+                        <li>
+                            <img src="/img/boleto.png">
+                        </li>
+                        <li>
+                            <img src="/img/mastercard.png">
+                        </li>
+                        <li>
+                            <img src="/img/pix.png">
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
+        </section>
+        <!-- Section: Links -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2023 Todos os direitos reservados. Desenvolvido por Kássia Taíssa.
+        <a class="text-white" href="https://gamingzone.com.br">Gamingzone.com</a>
+    </div>
+
+</footer>
+
+<button id="back-to-top">Voltar ao topo</button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/jquery-script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+</body>
+
+</html>
