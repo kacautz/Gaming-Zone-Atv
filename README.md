@@ -13,4 +13,4 @@ Servindo como apoio aos estudos da linguagem de marcação HTML, CSS, Javascript
 
 ## Demonstração
 
-[](Gaming_Zone_demo.gif)
+![](Gaming_Zone_demo.gif)
